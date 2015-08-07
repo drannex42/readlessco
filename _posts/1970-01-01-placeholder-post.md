@@ -2,7 +2,7 @@
 layout: post
 title: August 26th, 2015
 
-top1:TEST
+top1: TEST
 top1-link: http://test.com/
 top2:
 top2-link:
