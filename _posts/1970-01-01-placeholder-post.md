@@ -2,6 +2,7 @@
 layout: post
 title: August 26th, 2015
 
+//TOP
 top1: TEST
 top1-link: http://test.com/
 top2:
@@ -43,7 +44,6 @@ culture2:
 culture2-link:
 culture3:
 culture3-link:
-
 ---
 
 **{{ page.title }}** written in markdown.
