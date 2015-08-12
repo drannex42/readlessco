@@ -1,0 +1,492 @@
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  overflow-x: hidden;
+}
+
+body {
+    margin:0;
+    overflow-x: hidden;
+}
+
+::selection {
+  background: #FCEE30; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #FCEE30; /* Gecko Browsers */
+}
+
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+a.anchor{display: block; position: relative; top: -50px; visibility: hidden;}
+/* navbar */
+
+.navbar {
+    line-height: 2.5;
+    width:100%;
+    background:white;
+    position: fixed;
+    top:0;
+    height:50px;
+        z-index: 9;
+}
+
+
+.navbar img {
+      height: 35px;
+      padding: 5px;
+      padding-left: 25px;
+    display: inline;
+}
+
+.navbar ul {
+    display: inline;
+}
+
+.navbar ul li {
+    font-family: 'Avenir LT Std 35 Light';
+    text-align: center;
+    display: block;
+  color: black;
+}
+
+.navbar > h1 {
+    text-align:center;
+     display: inline;
+    
+}
+
+.title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-size: 20px;
+  display: inline;
+  padding-left: 15px;
+  line-height: 2.5;
+  cursor:pointer;
+}
+
+.date {
+  position:fixed;
+  top:0;
+  z-index:9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  line-height: 1.9;
+  font-family: 'Crimson Text', serif;
+  font-size: 25px;
+}
+
+.categories {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-size: 20px;
+  display: inline;
+  padding-right: 15px;
+  line-height: 2.5;
+  cursor: pointer;
+  padding-left: 15px;
+
+}
+
+.categories > .ion {
+    font-size: 12px;
+  vertical-align: middle;
+}
+
+.posts > .clear {
+    padding-bottom:20px;
+}
+
+/* top */
+
+.topcontainer {
+    text-align:center;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/nyc.jpg");
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    height: 100%;
+    line-height: 1.31;
+    padding-bottom: 60px;
+    padding-top: 25px;
+    z-index:1;
+    min-height:60%;
+    margin-top:50px;
+    }
+
+.topcontainer h1 {
+    font-size:50px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight:300;
+    color:white;
+}
+
+.ads {
+    text-align:center;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/nyc.jpg");
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    height: 100%;
+    line-height: 1.31;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    z-index:1;
+    min-height:100px;
+    }
+
+.ads h1 {
+    font-size:50px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight:300;
+    color:white;
+}
+
+
+.subscribe {
+    text-align:center;
+    background-image: linear-gradient(rgba(0,0,0,0,0),rgba(0,0,0,0)), url("../img/view.jpg");
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    height: 100%;
+    line-height: 1.31;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    z-index:1;
+    min-height:60%;
+    }
+
+.subscribe h1 {
+    font-size:50px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight:300;
+    color:black;
+}
+
+
+/* sections */
+
+.headlines {
+    background:#ffffff;
+    color: #000;
+    height:100%;
+    width:100%;
+    padding-top:1%;
+    
+}
+
+.headlines h1 {
+      margin-top: -10px;
+}
+.politics {
+    background:#000;
+    color: #fff;
+    height:100%;
+    width:100%;
+    padding-top:1%;
+}
+
+.technology {
+    background:#fff;
+    color: #000;
+    height:100%;
+    width:100%;
+    padding-top:1%;
+}
+
+.science {
+     background:#0061cc; 
+    /*background:#000; */
+    color: #fff;
+    height:100%;
+    width:100%;
+    padding-top:1%;
+}
+
+.culture {
+    background: #fff;
+    color:black;
+    height:100%;
+    width:100%;
+    padding-top:1.8%;
+}
+
+.entertainment {
+    background: #582c83; 
+    /* background: #000; */
+    color:white;
+    height:100%;
+    width:100%;
+    padding-top:1.8%; 
+}
+
+
+.more {
+    width:100%;
+    text-align: center;
+    font-family: 'Avenir LT Std 45 Book';
+    font-size:14px;
+    padding:10px;
+    background: #ccc;
+    transition: all 0.3s;
+    border-style:none;
+    cursor: pointer;
+    text-transform:lowercase;
+    position:relative;
+}
+
+.more:hover > .overlay {
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color:#000;
+    opacity:0.5;
+    transition: all 0.3s;
+}
+
+
+.sections {
+    margin-top: 20px;
+}
+.sections h1 {
+    font-family: 'Crimson Text', serif;
+    font-size:42px;
+    font-style: italic;
+    font-weight: 500;
+    padding-left:2%;
+    display: inline;
+}
+
+.sections .summary {
+  padding-left: 2.5%;
+  padding-right: 25px;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  width: 20%;
+}
+
+.posts {
+    padding-left:40%;
+}
+
+.headlines > .posts > h2 {
+      margin-top: -50px;
+}
+
+.posts h2 {
+  border-left: 3px solid #eee;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: -100px;
+}
+
+
+    
+.posts h2 > p {
+    font-family:'Avenir LT Std 45 Book';
+    font-weight:normal;
+    font-size:22px;
+    border-spacing: 10px;  
+    margin: 8px;
+    
+}
+
+.posts .source {
+    font-family:'Avenir LT Std 45 Book Oblique';
+    text-align:right;
+    font-size:14px;
+    padding-right:25px;
+        padding-bottom:80px;
+}
+
+.posts .source a {
+    color:inherit;
+        transition: all 0.2s;
+}
+.posts .source a:hover {
+    color:#4c4c4c;
+    transition: all 0.2s;
+}
+
+.space {
+    padding-bottom:15px !important;
+}
+
+#mce-EMAIL {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  width: 25%;
+  display:inline;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #fff;
+}
+
+
+
+/* MailChimp Form Embed Code - Slim - 08/17/2011 */
+#mc_embed_signup form {
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+#mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
+#mc_embed_signup input {
+  border: none;
+  border-bottom: 1px solid white;
+  color:white;
+}
+
+#mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
+#mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
+#mc_embed_signup .button {clear:both; border: 0 none; color: #000; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+#mc_embed_signup .button:hover {background-color:#777;}
+#mc_embed_signup .small-meta {font-size: 11px;}
+#mc_embed_signup .nowrap {white-space:nowrap;}     
+#mc_embed_signup .clear {clear:none; display:inline;}
+
+#mc_embed_signup label {display:inline; font-size:16px; padding-bottom:10px; font-weight:bold;}
+#mc_embed_signup input.email {display:inline; padding:8px 0; margin:0 1% 10px 0; text-indent:5px; width:30%; min-width:130px;}
+#mc_embed_signup input.button {
+  display: inline-block;
+  width: 35%;
+  margin: 0 0 10px 0;
+  min-width: 90px;
+  background: rgba(0,0,0,0.3);
+  color: white;
+  border: 1px solid white;
+  font-weight: 200;
+}
+
+#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
+#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+#mc_embed_signup #mce-error-response {display:none;}
+#mc_embed_signup #mce-success-response {color:#529214; display:none;}
+#mc_embed_signup label.error {display:inline-block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
+
+#mc_embed_signup input:focus {outline:none;border-bottom: 1px solid white;}
+
+
+#mc_embed_signup > h1 {
+    color:white;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    
+}
+
+.subscribe > #mc_embed_signup > form {
+  padding-bottom: 35px;
+}
+
+.footer {
+    color:black;
+    line-height:2;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+}
+
+.footer a {
+    color:black;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+.footer > .footerTitle {
+    
+    color:black;
+    border:none;
+}
+
+.footer > .social {
+    text-decoration: none;
+    border: none;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.viewall {
+  padding: 25px;
+  margin: 60px;
+  text-align: center;
+  background: rgba(255,255,255,.9);
+  color: black;
+  font-family: 'Crimson Text', serif;
+  font-size: 42px;
+  font-style: italic;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  transition: all 0.3s; 
+  border: 1px solid black;
+}
+
+.viewall:hover {
+    background:rgba(0,0,0,.1);
+    color:black;
+    transition: all 0.3s; 
+}
+
+
+@media (max-width:750px) {
+    .posts {
+        padding-left: 0;
+    }
+    
+    .posts > h2 {
+        border:none;
+    }
+    
+    .sections .summary {
+          width: 100%;
+        margin-bottom: 80px;
+        
+    }
+}
+
+@media (max-width:550px) {
+    .date {
+        display: none;
+    }
+    #mc_embed_signup input.email {
+    width: 60%;
+    }
+}

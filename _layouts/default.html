@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-
+      {% include header.html %}
         {{ content }}
+      {% include footer.html %}
+      <!--load jQuery, required-->
+  <script src="/js/jquery-2.1.3.min.js"></script>
+  <!--load jPushMenu, required-->
+  <script src="/js/jPushMenu.js"></script>
 
+  <!--call jPushMenu, required-->
+  <script>
+  jQuery(document).ready(function($) {
+    $('.toggle-menu').jPushMenu();
+  });
+  </script>
+
+  <script>
+  $(window).load(function(){
+    $("#mc_embed_signup").sticky({ topSpacing: 0 });
+  });
+  </script>
     </body>
 </html>

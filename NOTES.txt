@@ -1,0 +1,27 @@
+Ghost Install -
+
+## TITLES
+
+The "headlines" are the title of the post
+the "sources" are the body of the post 
+    In the hbs you make it show the {{excepts-200}} so it shows all the sources. 
+    
+    ex hbs : 
+        source: {{except}}
+        
+    in the body of the post :
+        (cnn)[cnn.com], (yahoo)[yahoo.com]
+        
+## SECTIONS 
+
+You use the "tag" section. 
+
+Rewrite the tag code using to change it
+
+    ex : 
+        /tag/science to /science
+        
+Tutorial:
+http://andy.stanton.is/writing/about/custom-post-tag-paths-with-ghost/
+        
+    
